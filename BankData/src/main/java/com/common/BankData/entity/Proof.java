@@ -21,6 +21,8 @@ public class Proof
     private String passportNumber;
     private String emailId;
     private Date dob;
+    private String proofName;
+    private String profAccountPassword;
 
 
     @OneToOne(mappedBy = "proof")
@@ -37,8 +39,25 @@ public class Proof
 
     private int age;
 
-    public int getProofId() {
-        return proofId;
+    
+
+     public String getProofName() {
+        return proofName;
+    }
+
+    public void setProofName(String proofName) {
+        this.proofName = proofName;
+    }
+     public String getProofName() {
+        return proofName;
+    }
+
+    public void profAccountPassword(String profAccountPassword) {
+        this.profAccountPassword = profAccountPassword;
+    }
+    
+    public int getprofAccountPassword() {
+        return profAccountPassword;
     }
 
     public void setProofId(int proofId) {
