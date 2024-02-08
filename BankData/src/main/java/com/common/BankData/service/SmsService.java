@@ -26,7 +26,7 @@ public class SmsService {
 
              String myUrl="https://www.fast2sms.com/dev/bulk?authorization="+apiKey+"&sender_id="+sendId+"&language="+language+"&route="+route+"&numbers="+number+"&message="+27480+"&variables={AA}|{BB}&variables_values="+username+ '|'+password;
              //sending get request using java..
-
+            LOG.warn("printing user apiKey {} and sendId {}", apiKey, sendId);
             URL url=new URL(myUrl);
             HttpsURLConnection con=(HttpsURLConnection)url.openConnection();
             con.setRequestMethod("GET");
